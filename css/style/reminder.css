@@ -1,0 +1,56 @@
+.reminder {
+    min-height: 443px;
+    padding: 89px 0 52px 0;
+    background-color: #efefef;
+}
+
+.reminder .reminder_img {
+    display: block;
+    margin: 0 auto;
+    margin-top: 8px;
+}
+
+.reminder .reminder_text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #252525;
+    margin-top: 36px;
+}
+
+.reminder .reminder_header {
+    font-family: 'Roboto - Black';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #299CBD;
+
+    margin-top: 30px;
+}
+
+.reminder .reminder_subtitle {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 20px;
+    text-align: center;
+    color: #4A4A4A;
+
+    margin-top: 24px
+}
+
+.reminder .container:hover > .reminder_img {
+    border-bottom: 3px solid #F9BF3B;
+    box-shadow:0 10px 10px -10px rgba(228, 214, 23, 0.8);
+}
+.reminder .container:hover > .reminder_header {
+    -webkit-text-stroke: 1px rgba(58, 118, 173, 0.6);
+}

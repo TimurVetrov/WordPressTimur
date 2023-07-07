@@ -1,0 +1,95 @@
+.waiting {
+    height: 607px;
+    padding: 88px 0 75px 0;
+    background-color: #efefef;
+}
+
+.waiting .waiting_header {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #252525;
+}
+
+.waiting_header:hover {
+    color:#F9BF3B;
+    -webkit-text-stroke: 2px rgba(179, 150, 25, 0.9);
+    cursor: pointer;
+}
+.waiting_header::after {
+    content: '';
+    display: block;
+    width: 220px;
+    height: 5px;
+    background: #F9BF3B;
+    margin: 15px auto 0 auto; 
+    transition: 1s;
+}
+.waiting_header:hover:after {
+    display: block;
+    width: 525px;
+    transition: ease-out 0.5s;
+}
+
+
+.waiting .waiting_subheader {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 20px;
+    text-align: center;
+    color: #4A4A4A;
+
+    margin-top: 20px;
+}
+
+.waiting .waiting_box {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    gap: 48px;
+    margin-top: 45px;
+}
+
+.waiting .waiting_box .waiting_item {
+    width: 342px;
+}
+
+.waiting .waiting_box .waiting_item .waiting_img {
+    width: 100%;
+}
+.waiting .waiting_box .waiting_item .waiting_text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 21px;
+    text-align: center;
+    color: #4A4A4A;
+    opacity: 0.8;
+
+    margin-top: 26px;
+}
+
+.waiting_text:hover {
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.5);
+    cursor: auto;
+}
+
+#waiting_item-1:hover > .waiting_img  {
+    border-bottom: 3px solid #F9BF3B;
+    box-shadow:0 10px 10px -10px rgba(228, 214, 23, 0.8);
+}
+#waiting_item-2:hover > .waiting_img  {
+    border-bottom: 3px solid #F9BF3B;
+    box-shadow:0 10px 10px -10px rgba(228, 214, 23, 0.8);
+}
+#waiting_item-3:hover > .waiting_img  {
+    border-bottom: 3px solid #F9BF3B;
+    box-shadow:0 10px 10px -10px rgba(228, 214, 23, 0.8);
+}

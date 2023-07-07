@@ -1,0 +1,23 @@
+@import url('style/promoHeader.css');
+@import url('style/waiting.css');
+@import url('style/content.css');
+@import url('style/finish.css');
+@import url('style/subscribe.css');
+@import url('style/reminder.css');
+@import url('style/footer.css');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Roboto';
+}
+
+.container { 
+    width: 1140px;
+    margin: 0 auto;
+    position: relative;
+}

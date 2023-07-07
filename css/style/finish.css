@@ -1,0 +1,109 @@
+.finish {
+    min-height: 450px;
+    padding: 86px 0 90px 0;
+    background: url("../../img/bg/second_bg.png") center center/cover no-repeat;
+}
+
+.finish .finish_header {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #efefef;
+}
+.finish .finish_header:hover {
+    color:#F9BF3B;
+    -webkit-text-stroke: 2px rgba(0, 0, 0, 0.5);
+}
+.finish_header::after {
+    content: '';
+    display: block;
+    width: 220px;
+    height: 5px;
+    background: #F9BF3B;
+    margin: 18px auto 0 auto; 
+    transition: 1s;
+}
+.finish_header:hover:after {
+    display: block;
+    width: 525px;
+    transition: ease-out 0.5s;
+}
+
+.finish .finish_box {
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-top: 39px;
+}
+
+.finish .finish_box .finish_item {
+    width: 234px;
+}
+
+.finish .finish_box .finish_round {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 0 auto;
+    width: 118px;
+    height: 118px;
+    background: #B4E2FF;
+    border-radius: 100%;
+}
+
+.finish .finish_box .finish_item .finish_text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 20px;
+    text-align: center;
+    color: #EFEFEF;
+    opacity: 0.8;
+    margin-top: 24px;
+}
+
+#finish_item-1:hover > .finish_text {
+    color:#F9BF3B;
+}
+#finish_item-1:hover > .finish_round  {
+    border: 3px solid #F9BF3B;
+    box-shadow: 0px 0px 10px rgba(228, 214, 23, 0.4);
+}
+#finish_item-2:hover > .finish_text {
+    color:#F9BF3B;
+}
+#finish_item-2:hover > .finish_round  {
+    border: 3px solid #F9BF3B;
+    box-shadow: 0px 0px 10px rgba(228, 214, 23, 0.4);
+}
+#finish_item-3:hover > .finish_text {
+    color:#F9BF3B;
+}
+#finish_item-3:hover > .finish_round  {
+    border: 3px solid #F9BF3B;
+    box-shadow: 0px 0px 10px rgba(228, 214, 23, 0.4);
+}
+#finish_item-4:hover > .finish_text {
+    color:#F9BF3B;
+}
+#finish_item-4:hover > .finish_round  {
+    border: 3px solid #F9BF3B;
+    box-shadow: 0px 0px 10px rgba(228, 214, 23, 0.4);
+}
+#finish_item-5:hover > .finish_text {
+    color:#F9BF3B;
+}
+#finish_item-5:hover > .finish_round  {
+    border: 3px solid #F9BF3B;
+    box-shadow: 0px 0px 10px rgba(228, 214, 23, 0.4);
+}
+
+
+
+

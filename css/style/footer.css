@@ -1,0 +1,29 @@
+.footer {
+    height: 169px;
+    padding: 57px 0 69px 0;
+    background: url("../../img/bg/bg_footer.png") center center/cover no-repeat;
+}
+
+.info {
+    margin: 0 auto;
+    width: 377px;
+    text-align: center;
+    color: #888888;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 21px;
+}
+
+footer a {
+    color: #888888;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 21px;
+    text-decoration: none;
+}
+
+.underlined {
+    text-decoration: underline;
+}
