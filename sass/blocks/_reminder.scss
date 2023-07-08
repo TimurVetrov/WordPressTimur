@@ -1,0 +1,54 @@
+.reminder {
+    min-height: 443px;
+    padding: 89px 0 52px 0;
+    background-color: #efefef;
+    &__img {
+        display: block;
+        margin: 0 auto;
+        margin-top: 8px;
+    }
+    &__text {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 30px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #252525;
+        margin-top: 36px;
+    }
+    &__title {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 36px;
+        line-height: 36px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #299CBD;
+        margin-top: 30px;
+    }
+    &__subtitle {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 23px;
+        line-height: 20px;
+        text-align: center;
+        color: #4A4A4A;
+        margin-top: 24px
+    }
+    .container {
+        &:hover > .reminder__img {
+            border-bottom: 3px solid #F9BF3B;
+            box-shadow:0 10px 10px -10px rgba(228, 214, 23, 0.8);
+        }
+        &:hover > .reminder__title {
+            -webkit-text-stroke: 1px rgba(58, 118, 173, 0.8);
+            color: #12a8d1;
+            text-shadow: 1px 1px 2px #252525;
+            cursor: pointer;
+        }
+    }
+}

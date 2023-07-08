@@ -1,0 +1,144 @@
+.finish {
+    min-height: 450px;
+    padding: 86px 0 90px 0;
+    background: url("../../img/bg/second_bg.png") center center/cover no-repeat;
+    &__title {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 30px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #fff;
+        &::after  {
+            content: '';
+            display: block;
+            width: 220px;
+            height: 5px;
+            background: #F9BF3B;
+            margin: 15px auto 0 auto; 
+            transition: 1s;
+        }
+        &:hover {
+            color:#F9BF3B;
+            text-shadow: 1px 1px 4px #252525;
+            cursor: pointer;
+        }
+        &:hover:after {
+            display: block;
+            width: 525px;
+            transition: ease-out 0.5s;
+        }
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    &__box {
+        display: flex;
+        align-self: center;
+        justify-content: space-evenly;
+        gap: 12px;
+        margin-top: 39px;
+    }
+    &__item {
+        width: 20%;
+    }
+    &__round {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto 0 auto;
+        width: 118px;
+        height: 118px;
+        background: #B4E2FF;
+        border-radius: 100%;
+    }
+    &__text {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 17px;
+        line-height: 20px;
+        text-align: center;
+        color: #EFEFEF;
+        opacity: 0.8;
+        margin-top: 24px;
+    }
+    #finish__item-1:hover > .finish__text {
+        color:#F9BF3B;
+    }
+    #finish__item-1:hover > .finish__round  {
+        border: 3px solid #F9BF3B;
+        box-shadow: 0px 0px 10px rgba(228, 214, 23, 0.4);
+    }
+    #finish__item-2:hover > .finish__text {
+        color:#F9BF3B;
+    }
+    #finish__item-2:hover > .finish__round  {
+        border: 3px solid #F9BF3B;
+        box-shadow: 0px 0px 10px rgba(228, 214, 23, 0.4);
+    }
+    #finish__item-3:hover > .finish__text {
+        color:#F9BF3B;
+    }
+    #finish__item-3:hover > .finish__round  {
+        border: 3px solid #F9BF3B;
+        box-shadow: 0px 0px 10px rgba(228, 214, 23, 0.4);
+    }
+    #finish__item-4:hover > .finish__text {
+        color:#F9BF3B;
+    }
+    #finish__item-4:hover > .finish__round  {
+        border: 3px solid #F9BF3B;
+        box-shadow: 0px 0px 10px rgba(228, 214, 23, 0.4);
+    }
+    #finish__item-5:hover > .finish__text {
+        color:#F9BF3B;
+    }
+    #finish__item-5:hover > .finish__round  {
+        border: 3px solid #F9BF3B;
+        box-shadow: 0px 0px 10px rgba(228, 214, 23, 0.4);
+    }
+
+    @media (max-width: 1024px) {
+        &__box {
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 39px;
+        }
+        &__item {
+            width: 30%;
+            margin-top: 20px;
+        }
+    }
+
+    // @media (max-width: 768px) {
+    // }
+
+    @media (max-width: 575px) {
+        &__item {
+            width: 80%;
+            margin-top: 25px;
+        }
+        &__round {
+            width: 150px;
+            height: 150px;
+        }
+        &__text {
+            font-size: 24px;      
+        }
+    }
+    
+    // @media (max-width: 425px) {
+    // }
+}
+
+
+
+
+
+

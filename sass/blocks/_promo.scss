@@ -1,0 +1,263 @@
+.promo {
+    min-height: 800px;
+    background: url("../../img/bg/main_bg.png") center center/cover no-repeat;
+    padding: 38px 0 62px 0;
+    .logo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &__link {
+            text-decoration: none;
+            &:hover > .logo__text {
+                color: $main-color;
+                text-shadow: 1px 1px 3px $main-color;
+            }
+        }
+        &__img {
+            display: block;
+            margin: 0 auto;
+        }
+        &__text {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            text-transform: uppercase;
+            text-align: center;
+            line-height: 24px;
+            color: #fff;
+            margin-top: 10px;
+            display: block;
+        }
+    }
+    &__title {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 41px;
+        line-height: 41px;
+        text-transform: uppercase;
+        text-align: center;
+        color: #F9BF3B;
+        margin-bottom: 0;
+    }
+    &__box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    &__subtitle {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 41px;
+        line-height: 41px;
+        text-transform: uppercase;
+        text-align: center;
+        color: $main-color;
+        margin-top: 20px;
+        &_big {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 900;
+            font-size: 80px;
+            line-height: 80px;
+            text-transform: uppercase;
+            text-align: center;
+            color: #fff;
+            margin-top: 20px;
+            &:hover {
+                color: $main-color;
+                -webkit-text-stroke: 1px rgba(0, 0, 0, 1);
+                cursor: pointer;
+                text-shadow: 0px 0px 10px rgba(228, 214, 23, 0.4);
+            }
+        }
+    }
+    &__text {
+        display: block;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 21px;
+        line-height: 28px; 
+        text-align: center;
+        color: #fff;
+        margin-top: 22px;
+        padding: 0 13px;
+        span {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 21px;
+            line-height: 28px;
+            text-transform: uppercase; 
+            text-align: center;
+            color: $main-color;
+        }
+        &:hover > span {
+            text-shadow: 0px 0px 10px rgba(228, 214, 23, 0.6);
+        }
+    }
+    &__btn {
+        width: 313px;
+        height: 72px;
+        border-radius: 10px;
+        background: linear-gradient(0deg, #2798B9 0%, #3AB6DA 100%);
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
+        cursor: pointer;
+        font-family: 'Roboto';
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: 400;
+        text-transform: uppercase;
+        text-shadow: -1px -1px 0px rgba(0, 0, 0, 0.22);
+        color: #FFFFFF;
+        margin: 72px auto;
+        display: block;
+        border: none;
+        &:hover {
+            background: linear-gradient(0deg, #dad71b 0%, #daa73a 100%);
+        }
+        &:focus {
+            border: 3px solid $main-color;
+            background: $main-color;
+            box-shadow: 0px 0px 10px rgba(228, 214, 23, 0.4);
+        }
+    }
+    .more {
+        &__anchor {
+            text-decoration: none;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            &:hover > .more__img {
+                display: none;
+            }
+            &:hover > .more__img_hover {
+                display: block;
+                margin: 0 auto;
+                margin-top: 5px;
+            }
+            &:hover > .more__text {
+                color: $main-color;
+                text-shadow: 0px 0px 10px rgba(228, 214, 23, 0.6);
+            }
+        }
+        &__text {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 100;
+            font-size: 15px;
+            line-height: 24px;
+            text-transform: uppercase;
+            text-align: center;
+            
+            color: #fff;
+            opacity: 0.6;
+
+            display: block;
+        }
+        &__img { 
+            display: block;
+            margin: 0 auto;
+            margin-top: 5px;
+            &_hover {
+                display: none;
+            }
+        }
+        
+    }
+
+    @media (max-width: 1200px) {
+        &__box {
+            width: 80%;
+            margin: 0 auto;
+        }
+        &__title {
+            font-size: 36px;
+        }
+        &__subtitle {
+            font-size: 36px;
+            &_big {
+                font-size: 60px;
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        &__title {
+            font-size: 30px;
+        }
+        &__subtitle {
+            font-size: 30px;
+            margin-top: 5px;
+            &_big {
+                font-size: 50px;
+            }
+        }
+        &__btn {
+            margin-top: 50px;
+            margin-bottom: 50px;
+            width: 270px;
+            height: 72px;
+            font-size: 16px;
+        }
+    }
+
+    @media (max-width: 575px) {
+        &__title {
+            font-size: 24px;
+        }
+        &__subtitle {
+            font-size: 24px;
+            margin-top: 0px;
+            &_big {
+                font-size: 40px;
+            }
+        }
+        &__text {
+            margin-top: 10px;
+            font-size: 18px;
+        }
+        &__btn {
+            margin-top: 40px;
+            margin-bottom: 50px;
+            width: 250px;
+            height: 72px;
+            font-size: 14px;
+        }
+    }
+    
+    @media (max-width: 425px) {
+        height: 670px;
+        &__title {
+            font-size: 20px;
+            line-height: 25px;
+        }
+        &__subtitle {
+            font-size: 16px;
+            margin-top: 20px;
+            line-height: 21px;
+            &_big {
+                font-size: 30px;
+            }
+        }
+        &__text {
+            margin-top: 5px;
+            font-size: 14px;
+            padding: 0;
+        }
+        &__btn {
+            margin-top: 40px;
+            margin-bottom: 50px;
+            width: 230px;
+            height: 52px;
+            font-size: 12px;
+        }
+    }
+}
