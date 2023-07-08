@@ -1,18 +1,18 @@
 $(document).ready(function(){
     //Модальные окна
-
-    // $('[data-modal=record]').on('click', function() {
-    //     $('.overlay, #record').fadeIn('slow');
-    // });
-    $('.modal__close').on('click', function() {
-        $('.overlay, #record').fadeOut('slow');
+    $('[data-modal=record]').on('click', function() {
+        $('.overlay, #record').fadeIn('slow');
     });
 
     $('.modal__link').each(function(i) {
         $(this).on('click', function() {
-            $('.overlay, #record').fadeIn('slow');
+            $('.overlay, #gift').fadeIn('slow');
         })
     });
+    $('.modal__close').on('click', function() {
+        $('.overlay, #record, #gift').fadeOut('slow');
+    });
+
 
     // Валидация форм
     function validateForms(form){
@@ -34,10 +34,15 @@ $(document).ready(function(){
                     minlength: jQuery.validator.format("Введите более {0} символа!")
                 },
                 phone: "Пожалуйста, введите свой номер телефона",
+                email: {
+                    required: "Пожалуйста, введите свою почту",
+                    email: "Неправильно введен адрес почты"
+                }
             }
         });
     };
     validateForms('#record form');
+    validateForms('#gift form');
     // Маска телефона
     $('input[name=phone]').mask("+7 (999) 999-99-99");
     // Используем технологию Аджэкс для обработки запросов без перезагрузки браузера

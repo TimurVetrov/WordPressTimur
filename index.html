@@ -31,7 +31,7 @@
                     Ежедневно в России появляется более 5 000 новых сайтов. 
                     И только единицы из них становятся популярными и приносят ощутимую прибыль. В чем секрет? В чем формула успеха? Узнайте на предстоящем двухдневном <span>БЕСПЛАТНОМ</span> интенсиве!
                 </div>
-                <button class="promo__btn">
+                <button data-modal="record" class="promo__btn ">
                     Записаться на интенсив!
                 </button>
                 <div class="more">
@@ -198,6 +198,20 @@
                 <input name="name" placeholder="Ваше имя" type="text"> 
                 <input name="phone" placeholder="Ваш телефон"> 
                 <button class="modal__button">Записаться на интенсив!</button>
+            </form>
+        </div>
+        <div class="modal__box" id="gift">
+            <div class="modal__close">&times;</div>
+            <img src="icons/gift.png" class="modal__img" alt="gift">
+            <div class="modal__gift">
+                Мы подготовили для вас подарок!
+            </div>
+            <div class="modal__descr">
+                Нажимайте на кнопку ниже, и получите свой подарок на почту!
+            </div>
+            <form class="modal__form" action="#">
+                <input name="email" placeholder="Ваш E-mail" type="email"> 
+                <button class="modal__button">Получить</button>
             </form>
         </div>
         <div class="modal__box modal__box_mini" id="thanks">
